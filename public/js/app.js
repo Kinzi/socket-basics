@@ -17,7 +17,7 @@ $form.on('submit', function(event){
 	event.preventDefault();
 	var $message = $form.find('input[name=message]');
 
-	jQuery('.messages').append('<p class="left">Me: ' + $message.val() + '</p>');
+	// jQuery('.messages').append('<p class="left">Me: ' + $message.val() + '</p>');
 
 	socket.emit('message', {
 		text: $message.val()
