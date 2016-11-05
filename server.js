@@ -18,6 +18,7 @@ io.on('connection', function(socket) {
 
 	socket.emit('message', {
 		text: 'Welcome to the ChatApp',
+		name: 'Server',
 		timestamp: moment().valueOf()
 	});
 })
