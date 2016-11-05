@@ -11,9 +11,7 @@ socket.on('message', function(msg){
 	var momentTimestamp = moment.utc(msg.timestamp);
 	var $message = jQuery('.messages');
 
-	$message.append('<p><strong>' + momentTimestamp.local().format('HH:mm') + ' ' + msg.name + ':</strong></p>');
-	$message.append( '<p>' + msg.text + '</p>');
-	$message.append('<br/>');
+	$message.append('<div class="card"><div class="card-block"><h4 class="card-title">' + msg.text + '</h4><p class="card-text">' + momentTimestamp.local().format('HH:mm') + ' ' + msg.name + '</p></div></div>');
 });
 
 // Handles submitting of new msg
