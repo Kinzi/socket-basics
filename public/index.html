@@ -3,13 +3,29 @@
 	<head>
 		<meta charset="utf-8">
 		<title>My Socket Chat App</title>
+		<style type="text/css">
+			.left {
+				color: red;
+			}
+
+			.right {
+				color: green;
+			}
+		</style>
 	</head>
 	<body>
 		<h1>My Socket Chat App</h1>
+		<hr>
+
+		<div class="messages">
+			<!-- Messages come in here -->
+		</div>
+
 		<form id="msg-form">
 			<input type="text" name="message" />
 			<input type="submit" />
 		</form>
+
 		<script type="text/javascript" src="/js/socket.io-1.4.5.js"></script>
 		<script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript" src="/js/app.js"></script>

@@ -6,6 +6,8 @@ socket.on('connect', function(){
 
 socket.on('message', function(msg){
 	console.log(msg.text);
+
+	jQuery('.messages').append('<p class="right">You: ' + msg.text + '</p>');
 });
 
 // Handles submitting of new msg
@@ -15,6 +17,7 @@ $form.on('submit', function(event){
 	event.preventDefault();
 	var $message = $form.find('input[name=message]');
 
+	jQuery('.messages').append('<p class="left">Me: ' + $message.val() + '</p>');
 
 	socket.emit('message', {
 		text: $message.val()
