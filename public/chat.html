@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Seb's Chat App</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
 		<style type="text/css">
 			.card-footer {
 			    padding: 0.25rem 1.25rem;
@@ -21,8 +21,13 @@
 	</head>
 	<body>
 		<div class="container center">
-			<h1 class="room-title"></h1>
-			<hr>
+			<br>
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 class="room-title"><!-- Room title comes in here --></h1>
+					<hr>
+				</div>
+			</div>
 
 			<div class="messages">
 				<!-- Messages come in here -->
@@ -41,6 +46,7 @@
 				</div>
 			</div>	
 			<br>
+			
 			<div class="row">
 				<div class="col-md-6">
 					<a href="/index.html">< Leave room</a>

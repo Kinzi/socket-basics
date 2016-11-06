@@ -3,19 +3,31 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Seb's Chat App</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
 		<style type="text/css">
-			
+			.top-element{
+				height: 25px;
+			}
+			.welcome-msg {
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			.jumbotron {
+				padding-top: 3.5em;
+				padding-bottom: : 3.5em;
+			}
 		</style>
 	</head>
 	<body>
-		<div class="container center">
-			<h1>Welcome to Seb's ChatApp</h1>
-			<hr>
+		<div class="container">
+			<div class="row"><p class="top-element"></p></div>
 			<div class="row">
-				<div class="jumbotron col-sm-8 offset-sm-2">
-					<form action="/chat.html" class="form-inline">
-						<label for="name">Enter your details to join the chat:</label>
+				<div class="jumbotron col-md-8 offset-md-2 text-center">
+					<div class="welcome-msg">
+						<h3>Welcome to Seb's ChatApp</h3>
+						<p>Enter your details to join the chat:</p>
+					</div>
+					<form action="/chat.html" class="form">
 						<div class="input-group">
 							<span class="input-group-addon">🤖</span>
 							<input type="text" class="form-control" id="name" name="name" placeholder="Your name">
@@ -26,7 +38,7 @@
 							<input type="text" class="form-control" id="name" name="room" placeholder="Chatroom name">
 						</div>
 						<br>	
-						<button class="btn btn-secondary center" type="submit">Join chat</button>
+						<button class="btn btn-block btn-outline-success" type="submit">Join chat</button>
 					</form>
 				</div>
 			</div>
