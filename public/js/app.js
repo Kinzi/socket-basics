@@ -21,7 +21,7 @@ socket.on('message', function(msg) {
 	if (msg.name === name) {
 		$message.append('<div class="row"><div class="col-sm-11"><div class="card card-outline-primary text-xs-left"><div class="card-block"><p class="card-text">' + msg.text + '</div><div class="card-footer text-muted">' + momentTimestamp.local().format('HH:mm') + ' ' + msg.name + '</div></div></div><div class="col-sm-1"></div></div>');
 	} else if (msg.name === 'Server') {
-		$message.append('<div class="row"><div class="col-sm-12"><div class="card card-outline-secondary text-xs-left"><div class="card-footer server-msg text-muted">' + msg.text + ' ' + name + ' -- ' + momentTimestamp.local().format('HH:mm') + ' ' + msg.name + '</div></div></div></div>');
+		$message.append('<div class="row"><div class="col-sm-12"><div class="card card-outline-secondary text-xs-left"><div class="card-footer server-msg text-muted">' + msg.text + ' -- ' + momentTimestamp.local().format('HH:mm') + ' ' + msg.name + '</div></div></div></div>');
 	} else {
 		$message.append('<div class="row"><div class="col-sm-1"></div><div class="col-sm-11"><div class="card card-outline-success text-xs-right"><div class="card-block"><p class="card-text">' + msg.text + '</div><div class="card-footer text-muted">' + momentTimestamp.local().format('HH:mm') + ' ' + msg.name + '</div></div></div></div>');
 	}
