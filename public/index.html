@@ -12,17 +12,21 @@
 	<body>
 		<div class="container center">
 			<h1>Welcome to Seb's Chat</h1>
-			<h3>Enter your name to join the chat:</h3>
-			<form action="/chat.html" class="form-inline">
-				<!-- <input type="text" name="name" class="" />
-				<input type="submit" value="Join chat" class="btn" /> -->
-				<div class="form-group">
-					<!-- <label for="exampleInputEmail2">Username</label> -->
-					<input type="text" class="form-control" name="name">
+			<hr>
+			<div class="row">
+				<div class="jumbotron col-sm-8 offset-sm-2">
+					<form action="/chat.html" class="form-inline">
+						<label for="name">Enter your name to join the chat:</label>
+						<div class="input-group">
+							<span class="input-group-addon">🤖</span>
+							<input type="text" class="form-control" id="name" name="name" placeholder="Your name...">
+							<span class="input-group-btn">
+								<button class="btn btn-secondary" type="submit">Join chat</button>
+							</span>
+						</div>	
+					</form>
 				</div>
-				<button type="submit" class="btn btn-default">Join chat</button>
-			</form>
-
+			</div>
 		</div>
 	</body>
 </html>

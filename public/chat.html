@@ -6,26 +6,46 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 		<style type="text/css">
-			
+			.card-footer {
+			    padding: 0.25rem 1.25rem;
+			    font-size: 12px;
+			    font-style: italic;
+			}
+			.card-block {
+			    padding: 0.75rem 1.25rem;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="container center">
 			<h1>Seb's Chat App</h1>
 			<hr>
-			<a href="/index.html">< Change details</a>
+			<div class="row">
+				<div class="col-md-6">
+					<a href="/index.html">< Change details</a>
+				</div>
+			</div>
+			
 			<br/>
 
 			<div class="messages">
 				<!-- Messages come in here -->
 			</div>
 
-			<form id="msg-form" class="form-inline">
-				<div class="form-group">
-					<input type="text" name="message" class="form-control" />
+			<div class="row">
+				<div class="col-sm-12">
+					<form id="msg-form" >
+						<div class="input-group">
+							<input type="text" class="form-control" name="message" placeholder="Your message...">
+							<span class="input-group-btn">
+								<button class="btn btn-secondary" type="submit">Send</button>
+							</span>
+						</div>	
+					</form>
 				</div>
-				<button type="submit" class="btn btn-default">Senden</button>
-			</form>
+			</div>
+
+			
 		</div>
 
 		<script type="text/javascript" src="/js/socket.io-1.4.5.js"></script>

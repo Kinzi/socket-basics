@@ -12,9 +12,9 @@ socket.on('message', function(msg) {
 	var $message = jQuery('.messages');
 
 	if (msg.name === name){
-		$message.append('<div class="row"><div class="col-sm-10"><div class="card card-outline-primary text-xs-left"><div class="card-block"><p class="card-text">' + msg.text + '</div><div class="card-footer text-muted">' + momentTimestamp.local().format('HH:mm') + ' ' + msg.name + '</div></div></div><div class="col-sm-2"></div></div>');
+		$message.append('<div class="row"><div class="col-sm-11"><div class="card card-outline-primary text-xs-left"><div class="card-block"><p class="card-text">' + msg.text + '</div><div class="card-footer text-muted">' + momentTimestamp.local().format('HH:mm') + ' ' + msg.name + '</div></div></div><div class="col-sm-1"></div></div>');
 	} else {
-		$message.append('<div class="row"><div class="col-sm-2"></div><div class="col-sm-10"><div class="card card-outline-success text-xs-right"><div class="card-block"><p class="card-text">' + msg.text + '</div><div class="card-footer text-muted">' + momentTimestamp.local().format('HH:mm') + ' ' + msg.name + '</div></div></div></div>');
+		$message.append('<div class="row"><div class="col-sm-1"></div><div class="col-sm-11"><div class="card card-outline-success text-xs-right"><div class="card-block"><p class="card-text">' + msg.text + '</div><div class="card-footer text-muted">' + momentTimestamp.local().format('HH:mm') + ' ' + msg.name + '</div></div></div></div>');
 	}
 });
 
