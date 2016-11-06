@@ -10,19 +10,23 @@
 	</head>
 	<body>
 		<div class="container center">
-			<h1>Welcome to Seb's Chat</h1>
+			<h1>Welcome to Seb's ChatApp</h1>
 			<hr>
 			<div class="row">
 				<div class="jumbotron col-sm-8 offset-sm-2">
 					<form action="/chat.html" class="form-inline">
-						<label for="name">Enter your name to join the chat:</label>
+						<label for="name">Enter your details to join the chat:</label>
 						<div class="input-group">
 							<span class="input-group-addon">🤖</span>
-							<input type="text" class="form-control" id="name" name="name" placeholder="Your name...">
-							<span class="input-group-btn">
-								<button class="btn btn-secondary" type="submit">Join chat</button>
-							</span>
-						</div>	
+							<input type="text" class="form-control" id="name" name="name" placeholder="Your name">
+						</div>
+						<br>
+						<div class="input-group">
+							<span class="input-group-addon">🚪</span>
+							<input type="text" class="form-control" id="name" name="room" placeholder="Chatroom name">
+						</div>
+						<br>	
+						<button class="btn btn-secondary center" type="submit">Join chat</button>
 					</form>
 				</div>
 			</div>
